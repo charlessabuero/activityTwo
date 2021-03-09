@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <head>
+        <style>
+        * {
+         box-sizing: border-box;
+        }
+        body {
+            font-family:'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'Sans-serif';
+            margin: 0;
+        }
+        .videoclass{
+            display: block;
+            overflow: hidden;
+            align-self: center;
+            justify-content: center;
+            outline: none;
+            background-color: white;
+        }
+        video::-webkit-media-controls {
+            display: none;
+        }
+        .videoclass video{
+            width: 100%;
+            height: auto;
+        }
+        .navigationbar {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 1px;
+            background-color: #ffffff;
+        }
+        .navigationbar a{
+            color: #000000;
+            padding: 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navigationbar nav{
+            padding: 20px;
+        }
+        .navigationbar a:hover{
+            background-color: grey;
+            color: white;
+        }
+        .coverpic{
+            display: block;
+            padding: 150px 100px 150px 100px;
+            position: relative;
+            width: auto;
+            height: auto;
+            background-image: url("picture/cover.jpg");
+            background-color: white;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .coverpic img{
+            align-self: center;
+            justify-content: center;
+        }
+        .coverpic h1{
+            text-align: left;
+        }
+        .coverpic h5{
+            text-align: left;
+        }
+        h1{
+            font-size: 60px;
+            font-weight: 300;
+        }
+        h2{
+            font-size: 40px;
+        }
+        h3{
+            font-size: 30px;
+        }
+        h4{
+            font-size: 20px;
+        }
+        h5{
+            font-size: 16px;
+            font-weight: normal;
+        }
+        p{
+            font-size: 12px;
+        }
+        .blogposts{
+            font-family: 'Segoe UI';
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+        }
+        .container1{
+            display: flex;
+            max-width: auto;
+            height: auto;
+            flex-wrap: wrap;
+            background-color: white;
+            align-self: center;
+            justify-content: center;
+        }
+        .blog{
+            width: 500px;
+            padding: 20px 20px 50px 20px;
+            height: auto;
+            margin: 1px;
+            align-self: center;
+            justify-content: center;
+            text-align: left; 
+        }
+        .footer {
+            padding: 20px 40px 50px 40px;
+            text-align: center;
+            background: #ff6f61;
+            color: white;
+        }
+        .footer a{
+            color: white;
+        }
+        .end{
+            padding: 20px;
+            text-align: center;
+            background: white;
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="videoclass">
+        <video width="100%" controls loop autoplay muted>
+            <source src="video/home_page_video.mp4" type="video/mp4">
+        </video>
+        </div>
+
+        <div class="navigationbar">
+            <nav href="Logo"><img src="logo/logo.png" width="50" height="25"></nav>
+            <a href="Home">Home</a>
+            <a href="About">About</a>
+            <a href="Contact">Contact</a>
+        </div>
+
+        <div class="coverpic">
+            <h1>We Promise to <br> Make You Laugh <br> Cry & Smile.</h1>
+            <h5>We know that your wedding day is a special day that you will remember for the rest of your life.<br><br>
+                We also know that it can be very busy and hectic, which is why we keep focus on keeping things simple and easy.</h5>
+        </div>
+        <div class="blogposts">
+            <h3>Blog Posts</h3>
+        </div>
+        <div class=container1>
+            <div class="blog">
+                <img src="picture/post-1.jpg" width="100%">
+                <h4>POST 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem est, officia placeat commodi quibusdam explicabo quidem dicta quis sit nemo, impedit veritatis veniam repudiandae voluptate. Quod quidem optio cum corrupti!</p>
+                <a href="insert_link">Read More</a>
+            </div>
+            <div class="blog">
+                <img src="picture/post-2.jpg" width="100%">
+                <h4>POST 2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem est, officia placeat commodi quibusdam explicabo quidem dicta quis sit nemo, impedit veritatis veniam repudiandae voluptate. Quod quidem optio cum corrupti!</p>
+                <a href="insert_link">Read More</a>
+            </div>
+            <div class="blog">
+                <img src="picture/post-3.jpg" width="100%">
+                <h4>POST 3</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem est, officia placeat commodi quibusdam explicabo quidem dicta quis sit nemo, impedit veritatis veniam repudiandae voluptate. Quod quidem optio cum corrupti!</p>
+                <a href="insert_link">Read More</a>
+            </div>
+        </div>
+        <div class="footer" color="white">
+            <h2 font-family="Segoe UI">Let us Be a Part of Your Memories</h2>
+            <h5>We know that your wedding day is a special day that you will remember for the rest of your life.</h5>
+            <a href="insert_link">Book Now</a>
+        </div>
+        <div class="end">
+            <p>© All rights reserved.</p>
+        </div>
+
+    </body>
+</html>
